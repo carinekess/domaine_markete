@@ -1,0 +1,154 @@
+<html>
+
+<head>
+    <title></title>
+    <link href="bootstrap5/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body class="color">
+    <div class="dora">
+        <img class="im" src="img/techinika.png" alt="">
+        <a href="indexe.html"><i class="fa-solid fa-house"></i> Home</a>
+        <a href="contact.html"><i class="fa-solid fa-address-card"></i> Contact Us</a>
+        <a href="contact.html"><i class="fa-regular fa-address-card"></i>About Us</a>
+        <a href="signup.html"><i class="fa-solid fa-arrow-right-to-bracket"></i>SignUp</a>
+
+    </div>
+    <div class="dang"> <button type="button" class="btn btn-dark changee">STEP1 choose</button>
+        <button type="button" class="btn btn-danger change">STEP2 configur</button>
+        <button type="button" class="btn btn-dark changee">STEP3 checkout</button>
+    </div>
+
+    <div class="black2">
+        <div class="signup-forma">
+            <div class="messege">
+                <form action="" method="post" class="signup-form" id="submiti">
+                    <div class="linkbutto">
+                        <div class="form-group col-md-6"> <input type="submit" class=" btn btn-danger changee submittt "
+                                value="login here" ></div>
+                        <div class="form-group col-md-6 ">
+                            <input type="submit" class=" btn btn-danger change submitti " value="register  here">
+                        </div>
+                    </div>
+                    <div class="inputi">
+                        <div class="linkbutto">
+                            <div class="form-group col-md-6 ">
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="Enter your First name" required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="Enter your Last name" required>
+                            </div>
+                        </div>
+                        <div class="linkbutto">
+                            <div class="form-group col-md-6 ">
+                                <input type="email" name="name" class="form-control" id="name"
+                                    placeholder="Enter your  email"required>
+                            </div>
+                            <div class="form-group col-md-6 ">
+                                <input type="number" name="name" class="form-control" id="name"
+                                    placeholder="Enter your phone number"required>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <input type="text" name="name" class="form-control" id="name"
+                                    placeholder="Campany name"required>
+                            </div>
+                            <div class="linkbutto">
+                                <div class="form-group col-md-6 ">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="City/ Town">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Province" required>
+                                </div>
+                            </div>
+                            <div>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="RWANDA" >
+                            </div>
+                            <div class="linkbutto">
+                                <div class="form-group col-md-6 ">
+                                    <input type="password" name="name" class="form-control" id="password"
+                                        placeholder="Enter your Password">
+                                </div>
+                                <div class="form-group col-md-6 ">
+                                    <input type="password" name="name" class="form-control" id="pass"
+                                        placeholder="Confirm password">
+                                </div>
+                            </div>
+
+
+                            <input type="submit" class=" btn btn-danger change form-control " value="LOG IN">
+                        </div>
+                </form>
+            </div>
+        </div>
+
+        <div class="login-background"><img src="img/phon.jpg" alt=""></div>
+
+    </div>
+    </div>
+    <footer class="footer6">
+        <div class="footer-div">
+            <div class="footer"><img src="img/techinika.png" alt=""></div>
+            <p class="p1">there are several excellent website builders available</p>
+            <p class="p2">These platforms allow you to create professional-looking websites without any coding
+                knowledge</p>
+            <div class="footer-link">
+                <div><a href=""><i class="fa-brands fa-facebook"></i></a></div>
+                <div><a href=""><i class="fa-brands fa-instagram"></i></a></div>
+                <div><a href=""><i class="fa-brands fa-x-twitter"></i></a></div>
+                <div><a href=""><i class="fa-brands fa-linkedin"></i></a></div>
+            </div>
+        </div>
+        <div class="footer-contact">
+            <div>
+                <p><i class="fa-regular fa-building"></i>Campany Name: Techinika ltd</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-envelope-open-text"></i>Email : techinika@gmail.com</p>
+            </div>
+            <div>
+                <p><i class="fa-solid fa-phone-volume"></i>Phone number :+250788226110</p>
+            </div>
+            <div>
+                <p><i class="fa-regular fa-copyright"></i>Copy Right by techinika ltd</p>
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script>
+
+        let formSignup = document.querySelector("#submiti");
+        console.log(formSignup);
+        let signupPass = document.querySelector("#password");
+        let Pass = document.querySelector("#pass");
+
+        formSignup.addEventListener("submit", function (event) {
+            event.preventDefault();
+            if (signupPass.value === "") {
+                alert("Please enter the password");
+            } else if (signupPass.value.length <= 6) {
+                alert("Please enter a strong password");
+            }
+else if(signupPass.value.length ==pass.value.length){
+    window.location.href='login.html'
+       }
+   else {
+    window.alert("Please Password must  be equal ")
+    }
+    
+        });
+
+    </script>
+</body>
+
+</html>
