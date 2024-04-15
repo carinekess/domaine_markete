@@ -336,6 +336,7 @@ position: relative;
   height: 100%;
   top: 9pc;
   left: 12pc;
+  border-radius: 20px;
   background-color: white;
 }
 .black2 {
@@ -684,7 +685,6 @@ flex-basis: 40%;
   display: flex;
   gap: 15vh;
   padding: 5rem;
-  border: 1px solid red;
   height: 80vh;
 }
 
@@ -1137,6 +1137,7 @@ font-size: 18px;
   width: 340px;
   height: 160px;
   top: 185px;
+  border-color: #000000;
   right: 20px;
 }
 
